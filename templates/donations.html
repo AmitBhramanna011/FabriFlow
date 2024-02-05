@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Donate Clothes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/donation.css') }}">
+  </head>
+  <body>
+    <div class="donate-form">
+      <h1>Donate Clothes</h1>
+      <form action="{{ url_for('donate') }}" method="POST">
+       <li id="name"><label for="donor_name" >Your Name</label>
+       <input type="text" id="donor_name" name="donor_name" required></li>
+       <li id="contact"><label for="contact_number">Contact Number</label>
+       <input type="tel" id="contact_number" name="contact_number" required></li>
+       <li id="dtype"><label for="donation_type">Donation Type</label>
+       <select id="donation_type" name="donation_type" required></li>
+          <option value="shirt">Shirt</option>
+          <option value="pants">Pants</option>
+          <option value="shoes">Shoes</option>
+        </select>
+
+        <li id="quan"><label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="10" required></li>
+
+        <li><input type="submit" value="Submit"></li>
+      </form>
+    </div>
+  </body>
+</html>

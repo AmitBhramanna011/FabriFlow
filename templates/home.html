@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home_style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('login') }}">Login</a></li>
+        <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+        <li><a href="{{ url_for('signup') }}">SignUp</a></li>
+        <li><a href="{{ url_for('donate') }}">Donate</a></li>
+        <li><a href="{{ url_for('donate') }}">Donations</a></li>
+      </ul>
+    </nav>
+    <div class="image">
+
+      <img src="https://st4.depositphotos.com/11089512/23262/i/450/depositphotos_232624940-stock-photo-donation-concept-woman-preparing-her.jpg" alt="">
+    </div>
+    <div class="container">
+     
+      
+
+   
+      <h1>Welcome to Clothes Donation Management</h1>
+      <p>Let's Spread Happiness </p>
+      <h2><a href="/donate"> Donate Now</a></h2>
+    </div>
+
+    <!-- In your home.html template -->
+<!-- 
+    <h2>Donate Now</h2>
+
+    <form action="/donate" method="POST">
+      <div>
+        <label for="donor_name">Donor Name:</label>
+        <input type="text" id="donor_name" name="donor_name" required>
+      </div>
+
+      <div>
+        <label for="item_donated">Item Donated:</label>
+        <input type="text" id="item_donated" name="item_donated" required>
+      </div>
+
+      <div>
+        <label for="donation_date">Donation Date:</label>
+        <input type="date" id="donation_date" name="donation_date" required>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form> -->
+
+
+  </body>
+</html>

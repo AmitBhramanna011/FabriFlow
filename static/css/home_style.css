@@ -1,0 +1,111 @@
+/* Navigation styles */
+body{
+  font-family: 'Rajdhani', sans-serif;
+}
+nav {
+    /* background-color: #333; */
+    overflow: hidden;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    float: left;
+  }
+  
+  nav a {
+    margin: 0px 20px;
+    display: block;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 1s;
+  }
+  
+  nav a:hover {
+   font-size: 16px;
+  }
+  .image img {
+    position: absolute;
+    z-index: -1;
+    /* top: 4rem; */
+    margin: 0px -8px;
+    height: 40rem;
+    width: 91rem;
+    opacity: 0.6;
+  }
+  /* Container styles */
+  .container {
+    
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+
+  .container h1{
+    text-align: center;
+    font-weight: 100;
+  }
+   .container h2 a{
+    text-decoration: none;
+    color: black;
+    background: #9bd3f7;
+    padding: 1rem;
+    /* border: 2px solid red; */
+    margin: 0px 20rem;
+    border-radius: 26px;
+    text-align: center;
+    top: -6rem;
+    position: relative;
+    /* width: 10px; */
+    /* height: 20px; */
+    display: inherit;
+   }
+  .container p {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    overflow: hidden;
+    /* border-right: 0.1em solid rgb(0, 0, 0); */
+    white-space: nowrap;
+    margin: 8rem auto;
+    letter-spacing: 0.1em;
+    animation: typing 4.0s steps(40, end), blink-caret .75s step-end infinite;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: orange;
+    }
+}
+  
+
+  
